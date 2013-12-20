@@ -7,7 +7,7 @@ apt-get -q -y install python-setuptools
 easy_install pip
 echo "Finished installing pip!"
 
-cho "Installing the supervisor tool ..."
+echo "Installing the supervisor tool ..."
 apt-get -q -y install supervisor
 echo "Finished installing supervisor!"
 
