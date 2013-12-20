@@ -46,14 +46,14 @@ def run():
 
   while True:
     # read temperature & humidity from SHT11
-    temp_sht11x = sht1x.read_temperature_C()
+    temp_sht1x = sht1x.read_temperature_C()
     humidity = sht1x.read_humidity()
 
     # read temperature & air pressure from BMP085
     temp_bmp085 = bmp.readTemperature()
     pressure = bmp.readPressure()
 
-    measurements["Temperatura"] = round_to_two_decimals((temp_sht11x + temp_bmp085) / 2)
+    measurements["Temperatura"] = round_to_two_decimals((temp_sht1x + temp_bmp085) / 2)
     measurements["Presiune_Atmosferica"] = int(pressure)
     measurements["Umiditatea_Aerului"] = round_to_two_decimals(humidity)
 
