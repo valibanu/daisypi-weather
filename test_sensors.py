@@ -12,7 +12,6 @@ print("--------------")
 print("Temperature: {:.2f} C".format(temperature))
 print("Humidity:    {:.2f} %".format(humidity))
 print("Dew Point:   {:.2f} %".format(dewPoint))
-#print("Temperature: {} Humidity: {} Dew Point: {}".format(temperature, humidity, dewPoint))
 print("")
 
 from Adafruit_BMP085.Adafruit_BMP085 import BMP085
@@ -45,4 +44,3 @@ print("---------------")
 print("Temperature: {:.2f} C".format(temp))
 print("Pressure:    {:.2f} hPa".format(pressure / 100.0))
 print("Altitude:    {:.2f}".format(altitude))
-
